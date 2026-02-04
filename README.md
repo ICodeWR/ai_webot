@@ -373,7 +373,7 @@ AI Webot 项目
 
 ## 联系与支持
 
-- **项目仓库**: [https://gitee.com/ai_webot](https://gitee.com/ai_webot)
+- **项目仓库**: [https://gitee.com/icodewr/ai_webot](https://gitee.com/icodewr/ai_webot)
 - **学习交流**: 欢迎在Issues中讨论技术问题
 - **问题反馈**: Bug报告和功能建议
 - **技术讨论**: 架构设计、实现方案交流
