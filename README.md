@@ -350,8 +350,6 @@ AI Webot 项目
 ### 核心技术栈
 - **[Playwright Python](https://playwright.dev/python/)** - 浏览器自动化权威指南
 - **[Python异步编程](https://docs.python.org/zh-cn/3/library/asyncio.html)** - 官方异步编程文档
-- **[PySide6官方文档](https://doc.qt.io/qt-6/)** - Qt for Python完整参考
-- **[Qt学习之路](https://www.pythonguis.com/)** - Python GUI开发实用教程
 
 ### 推荐学习路径
 1. **基础阶段**
@@ -371,7 +369,6 @@ AI Webot 项目
 
 ### 参考项目
 - [playwright-python-examples](https://github.com/microsoft/playwright-python/tree/main/examples) - 官方示例库
-- [PySide6-MVC-Example](https://github.com/pyside6/MVC-Example) - MVC架构实践
 - [awesome-python-applications](https://github.com/mahmoud/awesome-python-applications) - Python应用灵感
 
 ## 联系与支持
