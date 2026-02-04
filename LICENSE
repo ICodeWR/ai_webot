@@ -1,0 +1,45 @@
+MIT License
+
+Copyright (c) 2026 码上工坊
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+1. 教育使用限制
+   本软件仅限用于教育、学习、研究目的。禁止用于：
+   a) 生产环境或商业用途
+   b) 违反任何网站服务条款的用途
+   c) 大规模自动化或网络爬虫
+   d) 干扰网站正常运行的用途
+
+2. 安全合规要求
+   用户在使用前必须：
+   a) 阅读并理解项目的完整免责声明
+   b) 确认目标网站允许自动化访问
+   c) 遵守所有适用的法律法规
+   d) 启用软件内置的所有安全限制
+
+3. 责任承担
+   用户需自行承担因使用本软件导致的所有风险、可能违反第三方条款的责任以及任何法律或财务后果。作者对任何直接、间接、偶然、特殊、惩罚性或后果性的损失不承担任何责任。
+
+4. 衍生作品要求
+   基于本项目的衍生作品必须：
+   a) 保持相同的许可证（MIT + 教育使用限制）
+   b) 包含原始版权声明
+   c) 包含完整的免责声明
+   d) 明确标注教育演示性质
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

@@ -1,0 +1,36 @@
+{
+  "name": "DeepSeek",
+  "login_url": "https://chat.deepseek.com/sign_in",
+  "chat_url": "https://chat.deepseek.com/",
+  "browser": {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "locale": "zh-CN",
+    "timezone": "Asia/Shanghai",
+    "geolocation": {
+      "latitude": 39.9042,
+      "longitude": 116.4074
+    },
+    "permissions": ["geolocation"],
+    "headless": false
+  },
+  "selectors": {
+    "message_input": "textarea",
+    "file_upload": "input[type='file']",
+    "copy_button": "button.copy-btn",
+    "response_content": ".message-content",
+  },
+  "features": {
+    "save_login_state": true,
+    "save_conversations": true,
+    "use_markdown_copy": true,
+  },
+  "plugin": {
+    "module": "ai_webot.webot.deepseek.bot",
+    "class": "DeepSeekBot"
+  },
+  "output_dir": "output/deepseek",
+  "specific": {
+    "auto_accept_cookies": true
+  },
+  "version": "1.0.0"
+}

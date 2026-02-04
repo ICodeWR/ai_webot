@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""
+模块名称：__init__.py
+功能描述：基础机器人模块
+版权声明：Copyright (c) 2026 码上工坊
+开源协议：MIT License
+免责声明：本软件按"原样"提供，不作任何明示或暗示的担保
+作者：码上工坊
+修改记录：
+版本：0.1.0 2026-01-29 - 码上工坊 - 创建文件
+"""
+
+from .web_bot import WebBot
+
+__all__ = ["WebBot"]

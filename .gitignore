@@ -1,0 +1,96 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Playwright
+browser_states/
+playwright-report/
+test-results/
+
+# Output
+output/
+*.log
+logs/
+*.pid
+
+# Configurations
+*.cfg
+*.ini
+*.yml
+*.yaml
+*.json
+!configs/*.yaml
+!configs/*.json
+
+# Credentials
+credentials.json
+secrets.json
+.env
+.env.local
+.env.*.local
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# OS
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+
+# Test
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.python-version
+
+# Poetry
+poetry.lock
+*.lock
+
+# Project specific
+configs/*.example.yaml
+configs/*.example.json
+samples/
+examples/
+
+# Browser states
+browser_states

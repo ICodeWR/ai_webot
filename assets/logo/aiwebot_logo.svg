@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- 背景圆 -->
+  <circle cx="100" cy="100" r="90" fill="#165DFF"/>
+  <!-- 网页浏览器轮廓 -->
+  <rect x="40" y="40" width="120" height="100" rx="8" fill="white" stroke="#0F3A8A" stroke-width="6"/>
+  <rect x="40" y="40" width="120" height="20" rx="4" fill="#0F3A8A"/>
+  <!-- 机器人头部 -->
+  <circle cx="100" cy="90" r="25" fill="white" stroke="#0F3A8A" stroke-width="4"/>
+  <!-- 机器人眼睛 -->
+  <circle cx="85" cy="85" r="4" fill="#165DFF"/>
+  <circle cx="115" cy="85" r="4" fill="#165DFF"/>
+  <!-- 对话气泡 -->
+  <path d="M130,110 Q150,110 150,130 Q150,150 130,150 L120,150 L110,160 L100,150 L70,150 Q50,150 50,130 Q50,110 70,110 Z" fill="#00B42A"/>
+  <!-- 代码符号 -->
+  <text x="100" y="135" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">&lt;/&gt;</text>
+</svg>

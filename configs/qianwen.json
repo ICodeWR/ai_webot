@@ -1,0 +1,39 @@
+{
+  "name": "通义千问",
+  "description": "通义千问Web聊天机器人\n支持多种登录方式",
+  "version": "1.0.0",
+  "login_url": "https://tongyi.aliyun.com/qianwen",
+  "chat_url": "https://tongyi.aliyun.com/qianwen/chat",
+  "browser": {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "locale": "zh-CN",
+    "timezone": "Asia/Shanghai",
+    "geolocation": {
+      "latitude": 39.9042,
+      "longitude": 116.4074
+    },
+    "permissions": ["geolocation"],
+    "headless": false
+  },
+  "selectors": {
+    "message_input": "textarea[placeholder*='输入' i]",
+    "send_button": "button:has-text('发送'), button[type='submit']",
+    "file_upload": "input[type='file']",
+    "copy_button": "button.copy-btn, button[aria-label*='复制']",
+    "response_content": ".response-content, .message-content",
+  },
+  "features": {
+    "save_login_state": true,
+    "save_conversations": true,
+    "use_markdown_copy": true,
+  },
+  "plugin": {
+    "module": "ai_webot.webot.qianwen.bot",
+    "class": "QianWenBot"
+  },
+  "output_dir": "output/qianwen",
+  "specific": {
+    "auto_accept_cookies": true
+  },
+  "version": "1.0.0"
+}

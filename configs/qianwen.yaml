@@ -1,0 +1,46 @@
+# 通义千问聊天机器人配置
+name: 通义千问
+description: |
+  通义千问Web聊天机器人
+  支持多种登录方式
+version: 1.0.0
+
+# URL配置
+login_url: https://www.qianwen.com
+chat_url: https://www.qianwen.com/chat
+
+# 浏览器配置
+browser:
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+  locale: zh-CN
+  timezone: Asia/Shanghai
+  geolocation:
+    latitude: 39.9042
+    longitude: 116.4074
+  permissions:  ["clipboard-read", "clipboard-write", "geolocation"]
+  headless: false
+    
+# 页面元素选择器
+selectors:
+  # 聊天相关
+  message_input: 'role=textbox[name="向千问提问"i]'
+  file_upload: input[type='file']
+  copy_button: '"menuitem", name="复制为Markdown"'
+  response_content: 'button:has(span[data-icon-type="qwpcicon-down"])'
+
+# 功能特性
+features:
+  save_login_state: true
+  save_conversations: true
+  use_markdown_copy: true
+
+# 机器人实体插件
+plugin:
+  module: ai_webot.webot.qianwen.bot
+  class: QianWenBot
+
+"output_dir": "output/qianwen"
+
+# 通义千问特有配置
+specific:
+  auto_refresh_qrcode: true
