@@ -22,6 +22,7 @@ import os
 import time
 from abc import ABC, abstractmethod
 from datetime import datetime
+from math import e
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
@@ -62,6 +63,42 @@ class WebBot(ABC):
         # 创建输出目录
         self.output_dir = self.config.get_output_dir
         self.output_dir.mkdir(exist_ok=True, parents=True)
+        self.exclude_exts = {
+            ".pyc",
+            ".pyo",
+            ".so",
+            ".o",
+            ".a",
+            ".pyclass",
+            ".pyd",
+            ".pyo",
+            ".env",
+            ".env.example",
+            ".gitignore",
+            ".gitattributes",
+            ".DS_Store",
+            ".gitlab-ci.yml",
+            ".travis.yml",
+            "pyproject.toml",
+            ".lock",
+            ".dockerignore",
+            ".lib",
+            ".dll",
+            ".exe",
+            ".bak",
+            ".python-version",
+        }
+        self.exclude_dirs = {
+            "__pycache__",
+            ".git",
+            ".idea",
+            ".venv",
+            "node_modules",
+            "venv",
+            ".mypy_cache",
+            ".pytest_cache",
+            ".eggs",
+        }
 
     async def __aenter__(self):
         """
@@ -506,20 +543,8 @@ class WebBot(ABC):
         if output_file is None:
             output_file = "directory_structure.md"
 
-        if exclude_dirs is None:
-            exclude_dirs = {
-                "__pycache__",
-                ".git",
-                ".idea",
-                ".venv",
-                "node_modules",
-                "venv",
-                ".mypy_cache",
-                ".pytest_cache",
-            }
-
-        if exclude_exts is None:
-            exclude_exts = {".pyc", ".pyo", ".so", ".o", ".a"}
+        exclude_dirs = exclude_dirs or self.exclude_dirs
+        exclude_exts = exclude_exts or self.exclude_exts
 
         root = Path(directory).resolve()
 
@@ -627,14 +652,18 @@ class WebBot(ABC):
         if not directory.is_dir():
             raise ValueError(f"路径不是目录: {directory_path}")
 
-        exclude_exts = {".pyc", ".pyo", ".so", ".o", ".a"}
-
         # 获取目录下所有文件
         files = [
             str(f)
             for f in directory.rglob("*")
-            if f.is_file() and f.suffix not in exclude_exts
+            if f.is_file()
+            and f.suffix not in self.exclude_exts
+            and f.name not in self.exclude_exts
+            and not any(excluded in f.parts for excluded in self.exclude_dirs)
         ]
+
+        print(files)
+
         if not files:
             print(f"目录 {directory_path} 中没有文件")
             return []
